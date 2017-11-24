@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learning JS</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../src/build/styles/layout.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../../src/build/styles/{{ pagename }}.css">
+    <script type="text/javascript" src="../../src/build/scripts/{{ pagename }}.js"></script>
+    {% block pageStyles %}{% endblock %}
+    {% block pageScripts %}{% endblock %}
+</head>
+<body>
+    {% block header %}
+        {% include 'blocks/header.html' %}
+    {% endblock %}
+    <div class="background">
+        <div class="l-window">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+    {% block footer %}{% endblock %}
+</body>
+</html>

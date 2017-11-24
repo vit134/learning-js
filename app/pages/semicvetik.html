@@ -1,0 +1,20 @@
+ {% extends 'layout.html' %}
+
+ {% block content %}
+    <div class="handler">
+       <div class="handler__button js-btn-start">Start</div>
+       <div class="handler__button js-btn-stop">Stop</div>
+       <div class="handler__button js-btn-pause">Pause</div>
+    </div>
+    <div class="flower js-flower">
+        <div class="flower__leaf left-top js-flower-leaf" data-num="0"></div>
+        <div class="flower__leaf js-flower-leaf" data-num="1"></div>
+        <div class="flower__leaf right-top js-flower-leaf" data-num="2"></div>
+        <div class="flower__leaf js-flower-leaf" data-num="7"></div>
+        <div class="flower__center"></div>
+        <div class="flower__leaf js-flower-leaf" data-num="3"></div>
+        <div class="flower__leaf left-bottom js-flower-leaf" data-num="6"></div>
+        <div class="flower__leaf js-flower-leaf" data-num="5"></div>
+        <div class="flower__leaf right-bottom js-flower-leaf"  data-num="4"></div>
+    </div>
+{% endblock %}

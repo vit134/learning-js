@@ -1,0 +1,31 @@
+ {% extends 'layout.html' %}
+
+ {% block content %}
+     <div class="sidebar js-sidebar">
+        <div class="sidebar__info">
+            <span>New data will arrive in <span class="sidebar__sec js-timeout"></span> seconds</span>
+            <span class="sidebar__button js-update-data">Update</span>
+            <span class="sidebar__button js-resize-table">Resize</span>
+        </div>
+    </div>
+    <table class="table js-table">
+        <thead class="table__thead js-thead">
+            <tr class="table__tr">
+                <th class="table__th js-th">Заголовок 1</th>
+                <th class="table__th js-th">Заголовок 2</th>
+                <th class="table__th js-th">Заголовок 3</th>
+                <th class="table__th js-th">Заголовок 4</th>
+                <th class="table__th js-th">Заголовок 5</th>
+            </tr>
+        </thead>
+        <tbody class="table__tbody">
+            {% for item in data %}
+                 <tr class="table__tr js-tr">
+                    {% for subitem in item %}
+                        <td class="table__td js-td">{{ subitem }}</td>
+                    {% endfor %}
+                 </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

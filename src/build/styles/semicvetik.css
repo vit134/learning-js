@@ -1,0 +1,48 @@
+.flower {
+  width: 600px;
+  height: 600px;
+  font-size: 0;
+  margin: 0 auto;
+}
+.flower__leaf,
+.flower__center {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  border: 1px solid green;
+  background: yellow;
+}
+.flower__center {
+  border-color: #4e0000;
+  background: #4e0000;
+}
+.left-top {
+  border-radius: 50% 0 0 0;
+}
+.right-top {
+  border-radius: 0 50% 0 0;
+}
+.left-bottom {
+  border-radius: 0 0 0 50%;
+}
+.right-bottom {
+  border-radius: 0 0 50% 0;
+}
+.handler {
+  width: 500px;
+  text-align: center;
+  margin: 0 auto 50px;
+}
+.handler__button {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 50px;
+  margin: 80px 0 0;
+  cursor: pointer;
+}
+.handler__button:hover {
+  background-color: red;
+  color: white;
+}

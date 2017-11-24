@@ -1,0 +1,50 @@
+{
+  "name": "widgets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vit134/widgets.git"
+  },
+  "author": "vit134",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vit134/widgets/issues"
+  },
+  "homepage": "https://github.com/vit134/widgets#readme",
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-inject": "^4.2.0",
+    "gulp-inline-css": "^3.1.0",
+    "gulp-inline-source": "^3.1.0",
+    "gulp-inline-style": "^0.1.1",
+    "gulp-inline-svg": "^1.1.1",
+    "gulp-less": "^3.3.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace-task": "^0.11.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-rimraf": "^0.2.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sftp": "^0.1.5",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-svg-to-css": "^1.1.15",
+    "gulp-uglify": "^2.1.2",
+    "gulp-watch": "^4.3.11",
+    "inline-source": "^5.2.1",
+    "path": "^0.12.7",
+    "require-template": "^1.0.9",
+    "rimraf": "^2.6.1",
+    "yargs": "^7.0.2"
+  }
+}

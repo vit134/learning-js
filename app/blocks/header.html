@@ -1,0 +1,10 @@
+<div class="header">
+    <div class="l-window">
+        <div class="header__logo">Learning JS</div>
+        <div class="header__nav">
+            {% for item in nav_items %}
+                <a href="{{ item.link }}" class="header__nav__item {% if route == item.link %}active{% endif %}">{{item.name}}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
